@@ -2,3 +2,38 @@ print("hello")
 print("geethanjali college")
 
 
+try:
+    print("resource is opened")
+
+
+    num1 = int(input("Enter a number: "))
+
+    operator=input("Enter a operator(+,-,*,/): ")
+
+    num2 = int(input("Enter a number:"))
+    if operator == "+":
+        print("result",num1 + num2)
+    elif operator == "-":
+        print("result",num1 - num2)
+    elif operator == "*":
+        print("result",num1 * num2)
+    elif operator == "/":
+        print("result",num1 / num2)
+    else :
+        print("hey you have entered a invalid syntax")
+
+except ZeroDivisionError as e:
+    print("hey you cannot divide a number by zero",e)
+
+except ValueError as e:
+    print("hey you entered an invalid input",e)
+
+except Exception as e:
+    print("somthing went wrong",e)
+
+finally:
+    print("resource is closed")
+
+
+
+
